@@ -12,6 +12,24 @@ to be easily customised. They work with [Kosmtik](https://github.com/kosmtik/kos
 Since August 2013 these stylesheets have been used on the OSMF tileservers (tile.openstreetmap.org), and
 are updated from each point release. They supersede the previous [XML-based stylesheets](https://github.com/openstreetmap/mapnik-stylesheets).
 
+# This Fork
+
+The intention of this fork is to optimise current style for hi-res (retina) displays.
+Scale factor = 2 is using for rendering. The style is used on [http://www.novstroj.ru/map](http://www.novstroj.ru/map)
+
+### Changes
+
+*
+
+### Screenshots
+
+* Original
+
+![screenshot](https://raw.github.com/dooman87/openstreetmap-carto/master/preview_x2_original.png)
+
+* Changed
+
+
 # Installation
 
 You need a PostGIS database populated with OpenStreetMap data in the standard
