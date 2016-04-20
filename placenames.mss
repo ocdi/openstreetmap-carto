@@ -1,7 +1,8 @@
-@placenames: #222;
+@placenames: #000;
 @placenames-light: #777777;
 @country-labels: darken(@admin-boundaries, 15%);
 @state-labels: desaturate(darken(@admin-boundaries, 5%), 20%);
+@halo-radius-default: 0.5;
 
 .country {
   [admin_level = '2'][zoom >= 3][way_pixels > 1000][way_pixels < 360000] {
@@ -27,7 +28,7 @@
     text-fill: @country-labels;
     text-face-name: @book-fonts;
     text-halo-fill: rgba(255,255,255,0.6);
-    text-halo-radius: 1.5;
+    text-halo-radius: @halo-radius-default;
     text-wrap-width: 35;
     text-placement: interior;
     text-character-spacing: 0.5;
@@ -45,7 +46,7 @@
       text-fill: @state-labels;
       text-face-name: @oblique-fonts;
       text-halo-fill: rgba(255,255,255,0.6);
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-wrap-width: 0;
       text-placement: interior;
       text-min-distance: 3;
@@ -54,7 +55,7 @@
         text-wrap-width: 30;
       }
       [zoom >= 7] {
-        text-size: 11;
+        text-size: 9;
         text-wrap-width: 50;
       }
     }
@@ -69,7 +70,7 @@
       text-size: 8;
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: 30;
       text-min-distance: 10;
@@ -82,7 +83,7 @@
         text-wrap-width: 60;
       }
       [zoom >= 11] {
-        text-size: 15;
+        text-size: 13;
         text-wrap-width: 75;
       }
     }
@@ -97,7 +98,7 @@
       text-size: 9;
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: 30;
       text-min-distance: 10;
@@ -106,11 +107,11 @@
         text-wrap-width: 60;
       }
       [zoom >= 11] {
-        text-size: 14;
+        text-size: 12;
         text-wrap-width: 70;
       }
       [zoom >= 14] {
-        text-size: 15;
+        text-size: 13;
         text-wrap-width: 75;
       }
     }
@@ -124,20 +125,20 @@
       text-size: 9;
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: 45;
       text-min-distance: 10;
       [zoom >= 11] {
-        text-size: 11;
+        text-size: 10;
         text-wrap-width: 55;
       }
       [zoom >= 12] {
-        text-size: 13;
+        text-size: 12;
         text-wrap-width: 65;
       }
       [zoom >= 14] {
-        text-size: 15;
+        text-size: 13;
         text-wrap-width: 70;
       }
     }
@@ -147,10 +148,10 @@
 #placenames-small::suburb {
   [place = 'suburb'][zoom >= 12][zoom < 17] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 10;
     text-fill: @placenames;
     text-face-name: @book-fonts;
-    text-halo-radius: 1.5;
+    text-halo-radius: @halo-radius-default;
     text-halo-fill: rgba(255,255,255,0.6);
     text-wrap-width: 55;
     text-min-distance: 10;
@@ -174,7 +175,7 @@
       text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: 50;
       text-min-distance: 10;
@@ -203,7 +204,7 @@
       text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-radius: 1.5;
+      text-halo-radius: @halo-radius-default;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: 45;
       text-min-distance: 10;

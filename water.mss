@@ -271,10 +271,10 @@
     [zoom >= 10][way_pixels > 3000],
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 10;
       text-fill: @water-text;
       text-face-name: @oblique-fonts;
-      text-halo-radius: 1;
+      text-halo-radius: 0.5;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: @standard-wrap-width;
       text-placement: interior;
