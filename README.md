@@ -19,7 +19,9 @@ Scale factor = 2 is using for rendering. The style is used on [http://www.novstr
 
 ### Changes
 
-*
+* Using [Source Pro](https://github.com/adobe-fonts/source-sans-pro) font family
+* Reduced text sizes
+* Reduced text-halo-radius
 
 ### Screenshots
 
@@ -29,6 +31,7 @@ Scale factor = 2 is using for rendering. The style is used on [http://www.novstr
 
 * Changed
 
+![screenshot](https://raw.github.com/dooman87/openstreetmap-carto/master/preview_x2_updated.png)
 
 # Installation
 
