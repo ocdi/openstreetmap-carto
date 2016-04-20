@@ -2382,7 +2382,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       ref/text-fill: @junction-text-color;
       ref/text-min-distance: 2;
       ref/text-face-name: @oblique-fonts;
-      ref/text-halo-radius: 1.5;
+      ref/text-halo-radius: @halo-radius-default;
       [zoom >= 12] {
         name/text-name: "[name]";
         name/text-size: 9;

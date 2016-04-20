@@ -2,7 +2,6 @@
 @placenames-light: #777777;
 @country-labels: darken(@admin-boundaries, 15%);
 @state-labels: desaturate(darken(@admin-boundaries, 5%), 20%);
-@halo-radius-default: 0.5;
 
 .country {
   [admin_level = '2'][zoom >= 3][way_pixels > 1000][way_pixels < 360000] {

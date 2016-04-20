@@ -1,6 +1,8 @@
 @water-text: #6699cc;
 @glacier: #ddecec;
 @glacier-line: #9cf;
+@water-text-size-default: 9;
+@water-text-size-big: 11;
 
 #water-areas {
   [natural = 'glacier']::natural {
@@ -194,10 +196,10 @@
       text-placement: line;
       text-fill: @water-text;
       text-spacing: 400;
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
-      [zoom >= 14] { text-size: 12; }
+      [zoom >= 14] { text-size: @water-text-size-big; }
       [int_tunnel = 'yes'] { text-min-distance: 200; }
     }
 
@@ -206,14 +208,14 @@
       text-face-name: @oblique-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-placement: line;
       text-fill: @water-text;
     }
 
     [waterway = 'stream'][zoom >= 15] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
       text-halo-radius: 1;
@@ -229,7 +231,7 @@
       [zoom >= 15] {
         text-name: "[name]";
         text-face-name: @oblique-fonts;
-        text-size: 10;
+        text-size: @water-text-size-default;
         text-fill: @water-text;
         text-spacing: 600;
         text-placement: line;
@@ -240,7 +242,7 @@
 
     [waterway = 'canal'][zoom >= 14] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-fill: @water-text;
       text-placement: line;
       text-face-name: @oblique-fonts;
@@ -250,7 +252,7 @@
 
     [waterway = 'derelict_canal'][zoom >= 13] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-fill: #80d1ae;
       text-face-name: @oblique-fonts;
       text-placement: line;
@@ -258,7 +260,7 @@
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       [zoom >= 14] {
-        text-size: 12;
+        text-size: @water-text-size-big;
       }
     }
   }
@@ -271,7 +273,7 @@
     [zoom >= 10][way_pixels > 3000],
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: @water-text-size-default;
       text-fill: @water-text;
       text-face-name: @oblique-fonts;
       text-halo-radius: 0.5;
